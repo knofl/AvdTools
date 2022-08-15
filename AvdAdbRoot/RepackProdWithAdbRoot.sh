@@ -1,13 +1,6 @@
 #!/bin/bash
 
 #trap 'echo "# $BASH_COMMAND";read' DEBUG
-
-# Original script was taken from https://gist.github.com/tenzap/253c8918ee488c3874f20a563f458510
-# Huge Thanks to tenzap
-
-# Tested only on 30 API level with x86 arch
-
-# shellcheck source=./framework.sh
 source ./framework.sh
 
 MAPPER_CONFIG="mapper.conf"
