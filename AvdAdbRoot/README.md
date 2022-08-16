@@ -1,5 +1,8 @@
 # AVD adb root
 
+Scripts are written under and for the Linux systems. In future I'll port them onto MacOs. Everything was tested unde the Debian 11.x BullsEye.
+Also, scripts are meant to be run with root privileges.
+
 This projects is based on the script, that was taken from https://gist.github.com/tenzap/253c8918ee488c3874f20a563f458510
 Original script is aimed on instyalling open GApps onto the AVD. I wanted to use it for having GApps on the debug avd build.
 For some reasons, after applying it, I could not boot any of tested device to usable state. tenzap mentioned that there
