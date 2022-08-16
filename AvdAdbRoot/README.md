@@ -27,25 +27,25 @@ To use any of these scripts you need to edit the mapper.conf file. There you nee
 - FEC_BINARY - directory that contains the fec tool necessary for working of the avbtool.py. You can obtain it as part of the otatools from above.
 
 ### Prepare WorkDir
-Inside of the directory, that is your WORKDIR, you need to create and fill two directories like this:
-WORKDIR
-    |
-    |--xbin
-        |
-        |--su - binary taken from /system/xbin/ the debug version of system.img
-    |
-    |--policies
-        |
-        |--plat_sepolicy.cil - SELinux policies file taken from /system/etc/selinux/ the debug version of system.img
-        |
-        |--plat_sepolicy_and_mapping.sha256 - file taken from /system/etc/selinux/ the debug version of system.img; it contains sha256 hash of the policy and mapping (if my understanding is right)
-        |
-        |--mapping - copy of directory taken from /system/etc/selinux/mapping/ the debug version of system.img
+Inside of the directory, that is your WORKDIR, you need to create and fill two directories like this:  
+WORKDIR  
+&nbsp; &nbsp; |  
+&nbsp; &nbsp; |--xbin  
+&nbsp; &nbsp; &nbsp; &nbsp; |  
+&nbsp; &nbsp; &nbsp; &nbsp; |--su - binary taken from /system/xbin/ the debug version of system.img  
+&nbsp; &nbsp; |  
+&nbsp; &nbsp; |--policies  
+&nbsp; &nbsp; &nbsp; &nbsp; |  
+&nbsp; &nbsp; &nbsp; &nbsp; |--plat_sepolicy.cil - SELinux policies file taken from /system/etc/selinux/ the debug version of system.img  
+&nbsp; &nbsp; &nbsp; &nbsp; |  
+&nbsp; &nbsp; |--plat_sepolicy_and_mapping.sha256 - file taken from /system/etc/selinux/ the debug version of system.img; it contains sha256 hash of the policy and mapping (if my understanding is right)  
+&nbsp; &nbsp; &nbsp; &nbsp; |  
+&nbsp; &nbsp; &nbsp; &nbsp; |--mapping - copy of directory taken from /system/etc/selinux/mapping/ the debug version of system.img  
 
 ### Start the script
 
-Then, you can:
-#> ./MapImage.sh - to map you system.img;
-#> ./UnMapImage.sh - to undo system.img mapping;
-#> ./RepackMappedImage.sh - to save editions made to the inners of the mapped system.img;
-#> ./RepackProdWithAdbRoot.sh - to automatically repack production system.img with configuration, su binary and SEPolicies from debug version.
+Then, you can:  
+#> ./MapImage.sh - to map you system.img;  
+#> ./UnMapImage.sh - to undo system.img mapping;  
+#> ./RepackMappedImage.sh - to save editions made to the inners of the mapped system.img;  
+#> ./RepackProdWithAdbRoot.sh - to automatically repack production system.img with configuration, su binary and SEPolicies from debug version.  
