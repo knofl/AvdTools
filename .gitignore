@@ -1,0 +1,7 @@
+**/*.pyc
+
+WorkDir/
+
+ImagePackerConfig.conf
+
+AvdAdbRoot/tests/
